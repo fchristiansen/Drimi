@@ -4,13 +4,13 @@
     <section class="hero">
           <div class="slider_home owl-carousel owl-theme">
               <div class="item">
-                   <div class="owl-lazy img_slide" data-src="assets/img/slide1.png" style="background: url(assets/img/slide1.png);"> </div>
+                   <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slide1.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slide1.png);"> </div>
               </div>
               <div class="item">
-                    <div class="owl-lazy img_slide" data-src="assets/img/slide2.png" style="background: url(assets/img/slide2.png);"> </div>
+                    <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slide2.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slide2.png);"> </div>
               </div>
               <div class="item">
-                    <div class="owl-lazy img_slide" data-src="assets/img/slide3.png" style="background: url(assets/img/slide3.png);"> </div>
+                    <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slide3.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slide3.png);"> </div>
               </div>
         </div>
     </section><!-- hero -->
@@ -19,21 +19,21 @@
       <div class="container">
           <div class="row">
               <div id="rol1"class="box_rol col-md-4 text-center">
-                  <img src="assets/img/ico_rol.png">
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/ico_rol.png">
                   <h3>rol 1</h3>
                   <p>No hay mejor regalo que hacer un sueño realidad.</p>
                     <div class="divisor"> </div>
               </div>
 
               <div id="rol2" class="box_rol col-md-4 text-center">
-                  <img src="assets/img/ico_rol.png">
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/ico_rol.png">
                   <h3>rol 2</h3>
                   <p>La única plataforma que le regala a los Novios lo que sueñan.</p>
                   <div class="divisor"> </div>
               </div>
 
               <div id="rol3" class="box_rol col-md-4 text-center">
-                  <img src="assets/img/ico_rol.png">
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/ico_rol.png">
                   <h3>rol 3</h3>
                   <p>Lo que es de los Novios es de los Novios (y no de una multi tienda).</p>
               </div>
@@ -66,7 +66,7 @@
                   <div class="row">
                       <div class="testimonio clearfix">
                         <div class="col-xs-4">
-                            <img class="img-responsive center-block" src="assets/img/ico_testimonio.png">
+                            <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/assets/img/ico_testimonio.png">
                         </div>
                         <div class="col-xs-8">
                           <h3>title</h3>
@@ -85,7 +85,7 @@
                <div class="row">
                    <div class="testimonio clearfix">
                      <div class="col-xs-4">
-                         <img class="img-responsive center-block" src="assets/img/ico_testimonio.png">
+                         <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/assets/img/ico_testimonio.png">
                      </div>
                      <div class="col-xs-8">
                        <h3>title</h3>
@@ -105,7 +105,7 @@
                   <div class="row">
                       <div class="testimonio clearfix">
                         <div class="col-xs-4">
-                            <img class="img-responsive center-block" src="assets/img/ico_testimonio.png">
+                            <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/assets/img/ico_testimonio.png">
                         </div>
                         <div class="col-xs-8">
                           <h3>title</h3>

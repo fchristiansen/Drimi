@@ -8,11 +8,11 @@
             <span class="icon-bar"></span>
           </button>
             <a class="navbar-brand" href="index.php">
-                  <img class="hidden-xs hidden-sm" src="assets/img/logo.png" alt="" width="190" height="86">
+                  <img class="hidden-xs hidden-sm" src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="" width="190" height="86">
             </a>
 
               <a class="navbar-brand" href="index.php">
-                  <img class="visible-xs visible-sm" src="assets/img/logo.png" alt="" width="170" height="77">
+                  <img class="visible-xs visible-sm" src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="" width="170" height="77">
             </a>
 
 
@@ -22,7 +22,7 @@
           <?php include('include-form-login.php') ?>
           <!--  form login xs -->
           <?php include('include-form-login-xs.php') ?>
-          
+
           <div class="box_menu">
             <ul class="nav navbar-nav">
               <li><a href="que-es-drimi.php">¿Qué es Drimi?</a></li>
