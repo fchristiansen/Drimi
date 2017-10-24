@@ -1,0 +1,27 @@
+
+
+section.testimonios{
+  background-color: $gris2;
+  padding: 30px 0;
+
+
+  h2{
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .testimonio{
+    @include margen_item;
+      h3{
+        margin-bottom: 20px;
+    }
+    p{
+      a{
+        transition: all 0.2s ease-in-out;
+        &:hover{
+          color: $celeste;
+        }
+      }
+    }
+  }
+}

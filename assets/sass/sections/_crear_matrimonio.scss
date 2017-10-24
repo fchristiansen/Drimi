@@ -1,0 +1,212 @@
+
+     form{
+      .form-group{
+        max-width: 400px;
+        display: block;
+        margin: 0 auto 10px auto;
+        .form-control{
+        //  text-transform: uppercase;
+          @include light(20px, $negro);
+          padding: 25px 20px 25px 10px;
+          border-radius: 0;
+          border: none;
+        }
+      }
+      .checkbox{
+         label{
+           @include light(14px, $negro);       
+          input[type="checkbox"]{
+              
+           }
+         }
+      }
+
+      .btn_lg{
+        
+         @include regular(20px, white);
+        
+         border: none;
+      }
+    }
+
+section.crear_matrimonio{
+   padding-bottom: 30px;
+   position: relative;
+   overflow: hidden;
+   .container{
+    position: relative;
+   }
+   h2{
+      @include regular(30px,white);
+      text-align: center;
+      margin: 40px 0;
+      text-transform: uppercase;
+
+   }
+   
+      #bt_cambio1, #bt_cambio2{
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+      }
+      #bt_cambio1{
+        left: 90px;
+        @media (min-width:992px) and (max-width: 1439px){
+             
+               left: 110px;
+           }
+      }
+       #bt_cambio2{
+        right: 90px;
+        @media (min-width:992px) and (max-width: 1439px){
+             
+               right: 110px;
+           }
+       }
+      .novio, .novio2, .novia, .novia2 {
+          position: absolute;
+          background-size: cover !important;
+          background-position: center !important;
+          background-repeat: no-repeat !important;
+          bottom: -30px;
+      }
+      .novio{
+        background: url(../img/novio.png);
+         width: 181px;
+         height: 474px;
+        right: -110px;
+        @media (min-width: 992px) and (max-width: 1439px){
+            width: 103px;
+            height: 270px;
+            right: 0;
+        }
+      }
+
+      .novia2{
+          background: url(../img/novia.png);
+          width: 188px;
+          height: 473px;
+         right: -600px;
+          transform: scaleX(-1);
+          filter: FlipH;
+           @media (min-width:992px) and (max-width: 1439px){
+           width: 107px;
+           height: 270px;
+           right: -490px;
+        }
+
+      }
+
+      .novio2{
+          background: url(../img/novio.png);
+          width: 181px;
+          height: 474px;
+          opacity: 0;
+          left: -600px;
+          transform: scaleX(-1);
+          filter: FlipH;
+              @media (min-width: 992px) and (max-width: 1439px){
+                  width: 103px;
+                  height: 270px;
+                  left: -490px;
+              }
+            }
+
+      .novia{
+          background: url(../img/novia.png);
+          width: 188px;
+          height: 473px;
+          left: -110px;
+           @media (min-width:992px) and (max-width: 1439px){
+           width: 107px;
+           height: 270px;
+            left: 0;
+        }
+
+      }
+
+   
+
+
+    .box_img_pareja{
+          position: relative;
+        .box_img{
+           h3{
+              @include light(18px,white);
+              text-transform: none;
+              margin-top: 30px;
+           }
+           #icon{
+            @include centerer(true, true);
+            top: 40%;
+           }
+          background-color: rgba(0,0,0,0.4);
+          max-width: 400px;
+          height: 200px;
+          margin: 30px auto;
+          display: block;
+        }
+    }
+ 
+
+}
+
+section.elige_sueno{
+//  min-height: 590px;
+  background-color: $gris1;
+  overflow: hidden;
+  padding-bottom: 60px;
+
+     h2{
+      @include regular(30px,$negro);
+      text-align: center;
+      margin: 40px 0;
+      text-transform: uppercase;
+
+   }
+   .suenos{
+    margin-bottom: 60px;
+    h4{
+      @include regular(20px, $negro);
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    a{
+      display: block;
+      opacity: 0.34;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+        &.selected{
+          opacity: 1;
+        }
+        &:hover{
+          opacity: 1;
+        }
+       @media(max-width: 991px){
+            margin-bottom: 100px;
+            &:hover{
+              opacity: 0.34;
+            }
+            &.mb0{
+              margin-bottom: 0;
+            }
+        }
+         @media(max-width: 768px){
+         
+            &:hover{
+              opacity: 1;
+            }
+            &.mb0{
+              margin-bottom: 0;
+            }
+        }
+
+      img{
+          
+      }
+    }
+      
+   }
+  
+}

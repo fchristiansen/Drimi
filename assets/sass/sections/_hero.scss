@@ -1,0 +1,88 @@
+section.hero{
+  height: 790px;
+  margin-top: -97px;
+   @media (max-width:767px){
+    height: 400px;
+  }
+ // position: relative;
+  .slider_home{
+      position: absolute;
+      top:0;
+       height:790px;
+        @media (max-width:767px){
+            height: 400px;
+              position: relative;
+              top:auto;
+
+        }
+        .item{
+            position: relative;
+            .img_slide {
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                height:790px ;
+                @media (max-width:767px){
+                    height: 400px;
+                }
+            }
+        }
+          .owl-dots {
+            position: absolute;
+            @include centerer(true, false);
+            width: 1170px;
+            bottom: -6px;
+
+            @media(max-width: 1024px){
+               width: 970px;
+            }
+             @media(max-width: 991px){
+              display: none;
+            }
+           
+        .owl-dot {
+                &:nth-child(2){
+                    margin: 0 290px; 
+                      @media(max-width: 1024px){
+                         margin: 0 227px; 
+                      }
+                    }
+                 &:first-child{
+                    margin-left: 146px; 
+                      @media(max-width: 1024px){
+                          margin-left: 110px; 
+                      }
+                    }
+                  &:last-child{
+                    margin-right: 94px; 
+                      @media(max-width: 1024px){
+                          margin-right: 94px;
+                      }
+                  }
+              span {
+
+                  background-image: url("../img/marker.png");
+                  width: 99px;
+                  height: 54px;
+                  margin: 0;
+                  cursor: pointer;
+                  border-radius:0;
+                  background-color: transparent;
+                  visibility: hidden;
+                }
+          }
+          .owl-dot.active {
+              span {
+                //background-color: black;
+                 background-image: url("../img/marker.png");
+                 //opacity: 0.5;
+                  visibility: visible;
+             
+              }
+          }
+
+        } // dots
+  }
+
+  
+}

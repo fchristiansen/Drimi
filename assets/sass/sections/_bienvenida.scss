@@ -1,0 +1,59 @@
+
+.box_seleccion{
+        min-height: 500px;
+        @include centerer(true, true);
+        min-width: 200px;
+        z-index: 2;
+        @media(max-width: 767px){
+             min-height: auto;
+        }
+        a{
+          display: inline-block;
+            img{
+                transition: all 0.2s ease-in-out;
+                margin-bottom: 30px;
+                @media(max-width: 767px){
+                    margin-bottom: 20px;
+                    
+                }
+            }
+            &:hover {
+              img.arr_up{
+                 transform: translateY(-8px);
+              }
+              img.arr_down{
+                 transform: translateY(8px);
+              }
+          }
+        
+          h2{
+            color: white;
+           letter-spacing: 10px;
+            text-indent: 10px;
+            text-align: center !important;
+            text-transform: uppercase;
+          }
+        }
+        .logo_seleccion{
+          margin: 90px 0;
+          @media(max-width: 767px){
+               margin: 10px 0;
+          }
+        }
+      }
+  .bg_bienvenida{
+  
+    position: absolute;
+    background: url(../img/bg_bienvenida_lg.jpg) no-repeat bottom center fixed; 
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+    @media(max-width: 768px){
+      background: url(../img/bg_bienvenida_xs.jpg) no-repeat bottom center fixed; 
+      //background-size: cover;
+        
+    }
+
+  }
+

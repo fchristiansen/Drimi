@@ -1,0 +1,108 @@
+.box_login{
+      position: absolute;
+      right: 125px;
+      background-color: rgba(0,0,0,0.4);
+      padding: 15px;
+      min-width: 360px;
+      top: 70px;
+
+      @media(max-width: 1024px){
+        top: 125px;
+        right: -5px;
+      }
+         @media(max-width: 768px){
+       display: none;
+      }
+
+   
+        :after {
+          bottom: 100%;
+          left: 50%;
+          border: solid transparent;
+         // content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(0, 0, 0, 0);
+          border-bottom-color:  rgba(0, 0, 0, 0.4);
+          border-width: 10px;
+          margin-left: 80px;
+         // opacity: 0.4;
+        }
+    form{
+      .form-group{
+        .form-control{
+          text-transform: uppercase;
+          @include light(20px, $negro);
+          padding: 25px 20px 25px 10px;
+          border-radius: 0;
+          border: none;
+        }
+      }
+
+      .btn_lg{
+        width: 100%;
+         @include regular(20px, white);
+         margin-bottom: 20px;
+         border: none;
+      }
+    }
+        .row{
+          a{
+            @include light(14px, white);
+            border-bottom: 1px solid;
+            padding-bottom: 3px;
+
+          }
+        }
+}
+
+
+.box_login_xs{
+      position: relative;
+      background-color: rgba(0,0,0,0.4);
+      padding: 20px 15px 15px 15px;
+      margin: 30px 0 0 0;
+      display: block;
+       width: 100%;
+      @media(min-width:991px){
+          display: none;
+      }
+     
+    form#form_box_login_xs{
+     // max-width: 400px;
+        width: 100%;
+      .form-group{
+        max-width: none;
+        .form-control{
+          text-transform: uppercase;
+          @include light(20px, $negro);
+          padding: 25px 20px 25px 10px;
+          border-radius: 0;
+          border: none;
+        }
+      }
+
+      .btn_lg{
+        width: 100%;
+         @include regular(20px, white);
+         margin-bottom: 20px;
+         border: none;
+      }
+    }
+        .row{
+          &:last-child{
+              margin-bottom: 0;
+          }
+          a{
+            @include light(20px, white);
+            border-bottom: 1px solid;
+            padding-bottom: 3px;
+            margin-bottom: 30px;
+            display: inline-block;
+
+          }
+        }
+}
+

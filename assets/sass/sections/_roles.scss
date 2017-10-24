@@ -1,0 +1,55 @@
+section.roles{
+  background-color: $gris3;
+  padding: 30px 0;
+  min-height: 230px;
+   @media(max-width: 991px){
+    padding: 0;
+  }
+    h3, p {
+     color: white;
+    }
+    h3{
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+     
+     .row{
+        .col-md-4{
+              border-bottom: none;
+              border-right: 1px solid white;
+            &:last-child{
+               border-right: none;
+               border-bottom: none;
+            }
+        }
+      }
+      .divisor{
+        display: none;
+      }
+
+    @media(max-width: 991px){
+      .divisor{
+        display: block;
+        width: 90%;
+        height: 2px;
+        border-top: 1px solid white;
+        @include centerer(true, false);
+        bottom: 0;
+      }
+      .row{
+         .col-md-4{
+               border-bottom: none;
+               border-right: none;
+                padding: 30px 15px 20px 15px;
+              &:last-child{
+                border-bottom: none;
+                 border-right: none;
+             }
+         }
+       }
+      
+    }
+  
+    
+
+}

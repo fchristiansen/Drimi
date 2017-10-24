@@ -1,0 +1,80 @@
+section.como_funciona{
+  min-height: 450px;
+  padding: 50px 0 0;
+  h2{
+    @include regular(30px, white);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  p{
+    @include light(20px, $negro);
+    margin-bottom: 45px;
+  }
+}
+
+section.que_es{
+  @extend section.como_funciona;
+}
+
+section.pasos{
+  min-height: 460px;
+  .box_paso{
+    background-color: $gris3;
+   // border-bottom: 40px solid $gris1;
+    position: relative;
+      .container_img_paso{
+
+        height: 100%;
+         .img_paso{
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: center !important;
+            width: 100% !important;
+            height: 460px;
+         }
+      }
+
+      .container_content_paso{
+        position: relative;
+        min-height: 460px;
+        @media(max-width: 991px){
+           min-height: 0;
+        }
+        .content_paso{
+          @include centerer(true, true);
+          width: 70%;
+          @media(max-width: 991px){
+           // @include centerer(false, false);
+              position: relative;
+              transform: none;
+              top: auto;
+              left: auto;
+              width: auto;
+              padding: 50px 30px 30px 30px;
+          }
+          h3{
+            @include regular(24px, white);
+            margin: 0;
+            padding: 0;
+          }
+          p{
+            @include light(18px, white);
+            line-height: 25px;
+            margin: 25px 0;
+            @media(max-width: 991x){
+                @include font-size(20px);
+            }
+          }
+
+
+        }
+      }
+
+
+  }
+   
+}
+
+section.descripcion{
+  @extend section.pasos;
+}

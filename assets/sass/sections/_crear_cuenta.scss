@@ -1,0 +1,71 @@
+ 
+.bg_crear_cuenta{
+
+ // Set rules to fill background */
+  min-height: 100%;
+ /// min-width: 1024px;
+
+ // Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  // Set up positioning */
+  position: absolute;
+  top: -200px;
+  left: 0;
+}
+
+.novios, .novias, .novios2{
+    position: absolute;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+.novios{
+    background: url(../img/novios.png);
+    width: 146px;
+    height: 178px;
+    bottom: 198px;
+    left: 10%;
+      @media (max-width:991px){
+          width: 146px;
+          height: 178px;
+          left:-50px;
+          bottom: 282px;
+          transform: rotate(50deg);
+    }
+}
+.novios2{
+    background: url(../img/novios2.png);
+    width: 366px;
+    height: 446px;
+    bottom: 200px;
+    @media (min-width: 1280px){
+        left: 70%;
+    }
+     @media (min-width: 992px) and (max-width: 1279px){
+      right: 0;
+      left: auto;
+
+    }
+      @media (max-width:991px){
+          width: 146px;
+         height: 178px;
+         @include centerer(true, false);
+    }
+}
+.novias{
+  background: url(../img/novias.png);
+    width: 160px;
+    height: 195px;
+    right: 0;
+   top: 100px;
+
+}
+section.crear_cuenta {
+  //background-color: #fff;
+  position: relative;
+  min-height: 700px;
+     @import "../modules/_box_crear_cuenta";
+
+}

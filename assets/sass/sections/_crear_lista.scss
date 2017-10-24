@@ -1,0 +1,116 @@
+
+section.crear_lista{
+  position: relative;
+  .container{
+    @media(min-width: 1200px){
+        width: 1000px;
+    }
+  }
+    h2{
+        @include regular(28px, white);
+        text-transform: uppercase;
+        text-align: center;
+
+    } 
+    form#form_crear_lista{
+        //max-width: 1000px;
+       // width: 100%;
+       padding-bottom: 30px;
+        .wrap_invitado {
+            //padding: 20px 0 0 0;
+            margin-bottom: 10px;
+            .divider{
+            border-bottom: 1px solid white;
+            height: 2px;
+             margin: 15px;
+             
+               @media (max-width: 767px){
+                    margin: 0 15px;
+                }
+            }
+              .box_invitado{
+              // background-color: tomato;
+                position: relative;
+                width: 100%;
+                .numero_invitado {
+                      margin: 5px 0 0 19px;
+                      background: url(../img/circle.png) no-repeat;
+                      width: 40px;
+                      height: 40px;
+                  @media (max-width: 991px){
+                     margin: 0 0 10px 0;
+                   }
+                  .fa{
+                    //color: white;
+                  
+                    &.fa-circle-thin{
+                      color: $negro;
+                    }
+                    &.fa-inverse{
+                        @include light(16px, $negro);
+                    }
+                  }
+                   @media (max-width: 991px){
+                      float: left;
+                    }
+                } /* numero invitado */
+              
+               .form-group{
+                       width: 100%;
+                       max-width: 470px;
+                        .form-control{
+                              width: 100%;
+                            input{
+                                max-width: 500px;
+                            }
+
+                            @media (max-width: 991px){
+                               // width: auto;
+                            }
+                        }
+                      }
+
+                  .divider{
+                          height: 2px;
+                          border-bottom: 1px solid white;
+                          width: 100%;
+                          display: block;
+                      }
+              } /* box invitado */
+
+          }
+            .btn_sm{
+              margin: 30px 15px 30px auto;
+            }
+    } // form crear lista
+
+
+    .pareja {
+      position: absolute;
+      background: url(../img/pareja2.png);
+       width: 270px;
+       height: 337px;
+        bottom: 0;
+        //right: 200px;
+       
+        @media(min-width: 768px){
+            right: 10px;
+        }
+          @media(min-width: 769px){
+            right: 40px;
+        }
+        @media(min-width: 1200px){
+            right: 40px;
+        }
+        @media(min-width: 1440px){
+            right: 200px;
+        }
+         @media(max-width: 767px){
+            display: none;
+        }
+
+       
+        
+    }
+
+} // crear lista

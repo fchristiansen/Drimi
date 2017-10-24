@@ -1,0 +1,37 @@
+$amarillo: #d4a903;
+$bg_menu: #2A4B5A;
+$cafe: #342821;
+$celeste: #B8DDDC;
+$celeste2: #86a1a8;
+$gris1: #cbcbca;
+$gris2: #b6b6b5;
+$gris3: #666;
+$negro : #211915;
+$verde : #3b6464;
+
+// font stacks
+
+  @mixin light($size, $color){
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+   @include font-size($size);
+  color: $color;
+  font-weight: 300;
+  }
+
+  @mixin regular($size, $color) {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+     @include font-size($size);
+    color: $color;
+    font-weight: 400;
+  }
+
+  @mixin bold($size, $color){
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+   @include font-size($size);
+  color: $color;
+   font-weight: 700;
+  }
+
+
+
+
