@@ -1,4 +1,11 @@
-<?php include('header.php') ?>
+<?php
+/*
+
+Template name: Como funciona
+
+*/
+?>
+<?php get_header(); ?>
     <section class="como_funciona">
     <div class="container">
           <div class="row">

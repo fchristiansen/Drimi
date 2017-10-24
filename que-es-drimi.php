@@ -1,5 +1,11 @@
-<?php include('header.php') ?>
-    <section class="que_es">
+<?php
+/*
+
+Template name: Que es DRIMI
+
+*/
+?>
+<?php get_header(); ?>    <section class="que_es">
     <div class="container">
           <div class="row">
                 <div class="col-sm-12">

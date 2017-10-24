@@ -25,8 +25,8 @@
 
           <div class="box_menu">
             <ul class="nav navbar-nav">
-              <li><a href="que-es-drimi.php">¿Qué es Drimi?</a></li>
-              <li><a href="como-funciona.php">¿Cómo funciona?</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/que-es-drimi/">¿Qué es Drimi?</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/como-funciona/">¿Cómo funciona?</a></li>
               <li><a href="blog.php">Blog</a></li>
               <li><a href="testimonios.php">Testimonios</a></li>
               <li>
