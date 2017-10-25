@@ -4,20 +4,18 @@
    <section class="bg-blog">
 
        <div class="container">
+        <?php
+          if (have_posts()) :
+            while (have_posts()) :
+              the_post(); ?>
           <div class="post-content">
-              <h3 class="post-title">título del post</h3>
-              <p class="post-date">13 de noviembre, 2017</p>
 
-              <img class="img-responsive center-block post-img" src="https://api.fnkr.net/testimg/1140x600/00CED1/FFF/?text=img+placeholder">
+              <?php the_title( '<h3 class="post-title">', '</h3>'); ?>
+              <p class="post-date"> <?php echo get_the_date(); ?></p>
+              <img class="img-responsive center-block post-img" src="<?php the_post_thumbnail_url( ) ?>">
 
               <div class="post-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                indicididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor indicididunt.</p>
-
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                indicididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor indicididunt.</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                indicididunt.Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor indicididunt.Lorem <strong>ipsum dolor</strong> sit amet, consectetur adipisicing elit, sed do eiusmod temporindicididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor indicididunt.</p>
+                <?php the_content(); ?>
               </div>
 
               <div class="row">
@@ -33,7 +31,10 @@
               </div>
 
           </div> <!-- post-content -->
-
+          <?php
+            endwhile;
+          endif;
+        ?>
       <div class="row">
         <div class="col-xs-6">
           <div class="pull-left text-left">

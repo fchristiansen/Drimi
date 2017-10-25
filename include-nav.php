@@ -7,11 +7,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
                   <img class="hidden-xs hidden-sm" src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="" width="190" height="86">
             </a>
 
-              <a class="navbar-brand" href="index.php">
+              <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
                   <img class="visible-xs visible-sm" src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="" width="170" height="77">
             </a>
 
@@ -27,8 +27,8 @@
             <ul class="nav navbar-nav">
               <li><a href="<?php bloginfo('url'); ?>/que-es-drimi/">¿Qué es Drimi?</a></li>
               <li><a href="<?php bloginfo('url'); ?>/como-funciona/">¿Cómo funciona?</a></li>
-              <li><a href="blog.php">Blog</a></li>
-              <li><a href="testimonios.php">Testimonios</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/blog/">Blog</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/testimonios/">Testimonios</a></li>
               <li>
                   <div class="visible-xs visible-sm search_xs">
                       <form action="" method="get" accept-charset="utf-8">

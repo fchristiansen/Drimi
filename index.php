@@ -1,169 +1,42 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title> <?php bloginfo('name') ?> </title>
 
- <?php include(TEMPLATEPATH . '/include-slider-home.php'); ?>
 
-    <section class="roles">
-      <div class="container">
-          <div class="row">
-              <div id="rol1"class="box_rol col-md-4 text-center">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/ico_rol.png">
-                  <h3>rol 1</h3>
-                  <p>No hay mejor regalo que hacer un sueño realidad.</p>
-                    <div class="divisor"> </div>
-              </div>
 
-              <div id="rol2" class="box_rol col-md-4 text-center">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/ico_rol.png">
-                  <h3>rol 2</h3>
-                  <p>La única plataforma que le regala a los Novios lo que sueñan.</p>
-                  <div class="divisor"> </div>
-              </div>
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
 
-              <div id="rol3" class="box_rol col-md-4 text-center">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/ico_rol.png">
-                  <h3>rol 3</h3>
-                  <p>Lo que es de los Novios es de los Novios (y no de una multi tienda).</p>
-              </div>
-           </div>
-      </div>
-  </section> <!-- end roles -->
+    <script src="<?php bloginfo('template_url'); ?>/assets/js/modernizr.custom.js"></script>
 
-  <section class="crear_invitacion">
-      <div class="container">
-          <div class="row">
-              <div class="centerer text-center">
-                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do
-                eiusmod tempor indicididunt. Lorem ipsum dolor sit amet,consectetur adipisicing elit,
-                sed doeiusmod tempor indicididunt.</p>
-                <a class="btn btn-default btn_lg" href="#" role="button">crear invitación</a>
-              </div>
+    <?php wp_head(); ?>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+<body>
+
+    <div class="text-center box_seleccion">
+            <a href="<?php bloginfo('url') ?>/home/">
+                <img class="arr_down clearfix" src="<?php bloginfo('template_url'); ?>/assets/img/down_arrow.png" alt="">
+                <h2 class="center-block">amigos</h2>
+            </a>
+          <div class="clearfix">
+            <img class="logo_seleccion" src="<?php bloginfo('template_url'); ?>/assets/img/logo_seleccion.png" alt="">
           </div>
-      </div>
-  </section>
-   <div class="container_back">
-      <div class="bg_back">
 
-      </div>
-    <section class="testimonios">
-
-      <h2>testimonios</h2>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <div class="row">
-                      <div class="testimonio clearfix">
-                        <div class="col-xs-4">
-                            <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/assets/img/ico_testimonio.png">
-                        </div>
-                        <div class="col-xs-8">
-                          <h3>title</h3>
-                          <p>
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit, sed do
-                            eiusmod tempor indicididunt.
-                            <a href="">Ver + </a>
-                          </p>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-4">
-               <div class="row">
-                   <div class="testimonio clearfix">
-                     <div class="col-xs-4">
-                         <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/assets/img/ico_testimonio.png">
-                     </div>
-                     <div class="col-xs-8">
-                       <h3>title</h3>
-                       <p>
-                         Lorem ipsum dolor sit amet,
-                         consectetur adipisicing elit, sed do
-                         eiusmod tempor indicididunt.
-                         <a href="">Ver + </a>
-                       </p>
-
-                     </div>
-                   </div>
-               </div>
-
-              </div>
-              <div class="col-md-4">
-                  <div class="row">
-                      <div class="testimonio clearfix">
-                        <div class="col-xs-4">
-                            <img class="img-responsive center-block" src="<?php bloginfo('template_url'); ?>/assets/img/ico_testimonio.png">
-                        </div>
-                        <div class="col-xs-8">
-                          <h3>title</h3>
-                          <p>
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit, sed do
-                            eiusmod tempor indicididunt.
-                            <a href="">Ver + </a>
-                          </p>
-
-                        </div>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-  </section><!-- end testimonios -->
-  <div class="barra_gris"> </div>
-    <section class="blog">
-
-      <div class="container">
-         <h2>blog</h2>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="blog_post">
-                <img class="img-responsive center-block" src="https://api.fnkr.net/testimg/460x250/00CED1/FFF/?text=img+placeholder">
-                <h3>title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit, sed do
-                  eiusmod tempor indicididunt.
-                  <a href="">Ver +</a>
-                </p>
-
-              </div>
-
-            </div>
-
-            <div class="col-sm-4">
-              <div class="blog_post">
-                <img class="img-responsive center-block" src="https://api.fnkr.net/testimg/460x250/00CED1/FFF/?text=img+placeholder">
-                <h3>title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit, sed do
-                  eiusmod tempor indicididunt.
-                  <a href="">Ver +</a>
-                </p>
-
-              </div>
-
-            </div>
-
-            <div class="col-sm-4">
-              <div class="blog_post">
-                <img class="img-responsive center-block" src="https://api.fnkr.net/testimg/460x250/00CED1/FFF/?text=img+placeholder">
-                <h3>title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit, sed do
-                  eiusmod tempor indicididunt.
-                  <a href="">Ver +</a>
-                </p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </section> <!-- end blog -->
-</div>
-
-<?php get_footer(); ?>
-
-
+          <a href="<?php bloginfo('url') ?>/home/">
+              <img class="arr_up clearfix" src="<?php bloginfo('template_url'); ?>/assets/img/up_arrow.png" alt="">
+              <h2 class="center-block">novios</h2>
+          </a>
+    </div>
+    <div class="bg_bienvenida"></div>

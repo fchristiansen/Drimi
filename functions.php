@@ -9,6 +9,7 @@ function iniciarTema(){
 
     // ACTIVA IMAGENES DESTACADAS
     add_theme_support( 'post-thumbnails' );
+    add_image_size('imagen-destacada', 700, 500, true);
 
 
     // Activar Titulo
@@ -112,24 +113,34 @@ function add_google_analytics() {
 add_action('wp_footer', 'add_google_analytics');
 
 
-// custom excerpt length
-function custom_excerpt_length($length) {
-	return 20;
-}
-add_filter('excerpt_length', 'custom_excerpt_length');
+// cortar el extracto
+function get_excerpt($limit, $source = null){
 
-
-// custom excerpt ellipses for 2.9+
-function custom_excerpt_more($more) {
-	return '...';
+    if($source == "content" ? ($excerpt = get_the_content()) : ($excerpt = get_the_excerpt()));
+    $excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+    $excerpt = strip_shortcodes($excerpt);
+    $excerpt = strip_tags($excerpt);
+    $excerpt = substr($excerpt, 0, $limit);
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+    $excerpt = $excerpt.' <a href="'.get_permalink($post->ID).'">Ver +</a>';
+    return $excerpt;
 }
-add_filter('excerpt_more', 'custom_excerpt_more');
 
-/* custom excerpt ellipses for 2.8-
-function custom_excerpt_more($excerpt) {
-	return str_replace('[...]', '...', $excerpt);
-}
-add_filter('wp_trim_excerpt', 'custom_excerpt_more');
+/*
+Sample...  Lorem ipsum habitant morbi (26 characters total)
+
+Returns first three words which is exactly 21 characters including spaces
+Example..  echo get_excerpt(21);
+Result...  Lorem ipsum habitant
+
+Returns same as above, not enough characters in limit to return last word
+Example..  echo get_excerpt(24);
+Result...  Lorem ipsum habitant
+
+Returns all 26 chars of our content, 30 char limit given, only 26 characters needed.
+Example..  echo get_excerpt(30);
+Result...  Lorem ipsum habitant morbi
 */
 
 
