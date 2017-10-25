@@ -1,4 +1,5 @@
-<?php include('header.php') ?>
+<?php get_header(); ?>
+
 
     <img class="bg_crear_cuenta" src="assets/img/bg_crear_cuenta.jpg" alt="">
 
@@ -8,9 +9,10 @@
     <section class="crear_cuenta ">
 
             <?php include('include-form-crear-cuenta.php') ?>
-        
+
     </section>
 
-<?php include('footer.php') ?>
+<?php get_footer(); ?>
+
 
 

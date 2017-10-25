@@ -1,4 +1,5 @@
-<?php include('header.php') ?>
+<?php get_header(); ?>
+
 <section class="crear_invitacion">
   <div class="container relative">
     <h2>Crear invitación</h2>
@@ -9,7 +10,7 @@
                     <h4>nombre</h4>
                     <h4>apodo</h4>
                   </div>
-                 
+
                   <!-- imagen de la pareja -->
                   <img id="img_pareja" src="https://api.fnkr.net/testimg/160x100/00CED1/FFF/?text=160x100">
 
@@ -19,7 +20,7 @@
                   <div id="fondo4" class="fondo4 hide"></div>
 
                   <p id="texto0" class="texto_redaccion">Selecciona el tipo de redacción para tu invitación y un diseño.</p>
-          
+
                   <p id="ludico" class="texto_redaccion hide">Lúdico. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, odio! </p>
 
                    <p id="formal" class="texto_redaccion hide">Formal. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea architecto nulla officiis sapiente optio repudiandae cupiditate error, ut tempora. Porro!</p>
@@ -84,14 +85,14 @@
       <div class="novios2"></div>
   </div>
 
-  
+
 
 
 </section><!-- crear invitacion -->
    <div class="container_btn_al_centro">
      <a href="javascript:void(0);" class="btn btn-default btn_lg">siguiente</a>
   </div>
+<?php get_footer(); ?>
 
-<?php include('footer.php') ?>
 
 

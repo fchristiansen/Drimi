@@ -1,4 +1,4 @@
-<?php include('header.php') ?>
+<?php get_header(); ?>
 <!-- Modal Editar nombre -->
 <div class="modal fade modal_edicion" id="editaNombre" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -166,6 +166,6 @@
       </div>
     </section> <!-- // datos -->
 
-<?php include('footer.php') ?>
+<?php get_footer(); ?>
 
 

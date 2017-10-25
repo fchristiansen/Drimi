@@ -1,4 +1,4 @@
-<?php include('header.php') ?>
+<?php get_header(); ?>
 
  <h2 class="title-blog">blog</h2>
    <section class="bg-blog">
@@ -57,6 +57,6 @@
 
 
 
-<?php include('footer.php') ?>
+<?php get_footer(); ?>
 
 

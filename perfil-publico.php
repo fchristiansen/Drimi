@@ -1,6 +1,6 @@
-<?php include('header.php') ?>
+<?php get_header(); ?>
   <section class="perfil">
-  
+
     <div class="container">
           <div class="row">
               <div class="col-sm-12 col-md-6">
@@ -17,15 +17,15 @@
               <div class="col-sm-12 col-md-6">
                   <div class="descripcion">
                     <h3>Nuestro sueño</h3>
-                    <p>Lorem ipsum dolor sit amet,consectetur adipisicing 
-                      elit, sed do eiusmod tempor indicididunt. Lorem ipsum 
-                      dolor sit amet,consectetur adipisicing elit, sed doeiusmod 
-                      tempor indicididunt. Lorem ipsum dolor sit amet,consectetur 
-                      adipisicing elit, sed do eiusmod tempor indicididunt. 
-                      Lorem ipsum dolor sit amet,consectetur adipisicing elit, 
+                    <p>Lorem ipsum dolor sit amet,consectetur adipisicing
+                      elit, sed do eiusmod tempor indicididunt. Lorem ipsum
+                      dolor sit amet,consectetur adipisicing elit, sed doeiusmod
+                      tempor indicididunt. Lorem ipsum dolor sit amet,consectetur
+                      adipisicing elit, sed do eiusmod tempor indicididunt.
+                      Lorem ipsum dolor sit amet,consectetur adipisicing elit,
                       sed doeiusmod tempor indicididunt.</p>
                   </div>
-                
+
               </div>
           </div>
     </div>
@@ -37,10 +37,10 @@
                            <div class="container_tabla">
                              <h3>pack de ladrillos</h3>
                              <form id="form_regalo" action="">
-                               
+
                                 <div class="borde_tabla">
                                   <table id="tabla_ladrillos" class="table table-condensed">
-                     
+
                                       <tbody>
                                         <tr>
                                           <td>1 ladrillo</td>
@@ -48,11 +48,11 @@
                                           <td>
                                           <div class="selectme checkbox">
                                              <label>
-                                               <input type="checkbox"  value="10000"> 
+                                               <input type="checkbox"  value="10000">
                                              </label>
                                            </div>
                                            </td>
-                                         
+
                                         </tr>
                                         <tr>
                                           <td>3 ladrillos</td>
@@ -60,11 +60,11 @@
                                           <td>
                                             <div class="selectme checkbox">
                                                <label>
-                                                 <input type="checkbox"  value="30000"> 
+                                                 <input type="checkbox"  value="30000">
                                                </label>
                                              </div>
                                           </td>
-                                         
+
                                         </tr>
                                         <tr>
                                           <td>6 ladrillos</td>
@@ -72,11 +72,11 @@
                                           <td>
                                             <div class="selectme checkbox">
                                                <label>
-                                                 <input type="checkbox"  value="60000"> 
+                                                 <input type="checkbox"  value="60000">
                                                </label>
                                              </div>
                                           </td>
-                                         
+
                                         </tr>
                                         <tr>
                                           <td>12 ladrillos</td>
@@ -84,21 +84,21 @@
                                           <td>
                                             <div class="selectme checkbox">
                                                <label>
-                                                 <input type="checkbox"  value="120000"> 
+                                                 <input type="checkbox"  value="120000">
                                                </label>
                                              </div>
                                           </td>
-                                        
+
                                         </tr>
                                       </tbody>
                                     </table>
 
                            </div><!-- borde tabla -->
-                            
+
                                <span class="small">Toda Construcción necesita un obrero. <br>
                                                               8% Comisión.</span>
-                              
-                          
+
+
                            </div><!-- // container tabla -->
                          </div>
                          <div class="col-sm-12 col-md-5 right_side">
@@ -111,21 +111,21 @@
                                         <div class="box_gris center-block">
                                             <p>$10.000</p>
                                         </div>
-                                         <span class="small">+8% Construcción</span> 
+                                         <span class="small">+8% Construcción</span>
                                       </div>
                                       <div class="col-sm-6 col-md-12 col-lg-6">
                                          <div class="box_amarillo  center-block">
                                           <p>$10.800</p>
                                       </div>
                                       </div>
-                                   
+
                                     </div>
                                   </div><!-- total -->
                                  </div><!-- content total -->
                              </div><!-- container total -->
                          </div>
 
-              
+
 
             </form>
         </div><!-- row -->
@@ -135,6 +135,6 @@
       </div><!-- container fluid -->
     </section> <!-- // datos -->
 
-<?php include('footer.php') ?>
+<?php get_footer(); ?>
 
 

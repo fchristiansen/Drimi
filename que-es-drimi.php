@@ -5,7 +5,8 @@ Template name: Que es DRIMI
 
 */
 ?>
-<?php get_header(); ?>    <section class="que_es">
+<?php get_header(); ?>
+ <section class="que_es">
     <div class="container">
           <div class="row">
                 <div class="col-sm-12">
@@ -72,7 +73,5 @@ Template name: Que es DRIMI
 
 
 
-
-<?php include('footer.php') ?>
-
+<?php get_footer(); ?>
 

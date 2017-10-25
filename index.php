@@ -1,19 +1,6 @@
-<?php include('header.php') ?>
+<?php get_header(); ?>
 
-
-    <section class="hero">
-          <div class="slider_home owl-carousel owl-theme">
-              <div class="item">
-                   <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slide1.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slide1.png);"> </div>
-              </div>
-              <div class="item">
-                    <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slide2.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slide2.png);"> </div>
-              </div>
-              <div class="item">
-                    <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slide3.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slide3.png);"> </div>
-              </div>
-        </div>
-    </section><!-- hero -->
+ <?php include(TEMPLATEPATH . '/include-slider-home.php'); ?>
 
     <section class="roles">
       <div class="container">
@@ -177,6 +164,6 @@
   </section> <!-- end blog -->
 </div>
 
-<?php include('footer.php') ?>
+<?php get_footer(); ?>
 
 

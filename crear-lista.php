@@ -1,4 +1,5 @@
-<?php include('header.php') ?>
+<?php get_header(); ?>
+
 
     <section class="crear_lista">
       <div class="container">
@@ -12,7 +13,7 @@
                </label>
              </div>
            </div>
-              
+
           <div class="row">
               <div class="wrap_invitado">
                 <div class="box_invitado clearfix">
@@ -80,16 +81,16 @@
                   </div>
                   <div class="col-sm-1"></div>
                 </div> <!-- box invitado -->
-             
+
               </div>
                 <button type="submit" class="btn btn-default btn_sm pull-right">enviar nuevas invitaciones</button>
                 <div class="clear"></div>
                 <button type="button" class="btn btn-default btn-circle btn-xl center-block">+</button>
           </div> <!-- // row  -->
-             
+
           </form>
-            
-           
+
+
       </div><!-- container -->
               <div class="container_btn_al_centro">
                 <a href="javascript:void(0);" class="btn btn-default btn_lg">siguiente</a>
@@ -97,6 +98,7 @@
              <div class="pareja"></div>
     </section> <!-- // crear_lista -->
 
-<?php include('footer.php') ?>
+<?php get_footer(); ?>
+
 
 
