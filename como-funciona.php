@@ -9,6 +9,7 @@ Template name: Como funciona
     <section class="como_funciona">
     <div class="container">
           <div class="row">
+
                 <div class="col-sm-12">
                   <h2>¿cómo funciona?</h2>
                 </div>
@@ -24,6 +25,9 @@ Template name: Como funciona
                 <p>DRIMI es perfecto.</p>
                 <p>O mejor dicho: DRIMi es un sueño.</p>
               </div>
+
+
+
           </div>
     </div>
     </section><!-- // como funciona -->
